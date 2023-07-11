@@ -1,28 +1,39 @@
-// Example 1 - split()
-function revString(str) {
-return str.split('')
-}
-console.log(revString("Morshedul Arefin"))
-OUTPUT:
-[
-'M', 'o', 'r', 's',
-'h', 'e', 'd', 'u',
-'l', ' ', 'A', 'r',
-'e', 'f', 'i', 'n'
-]
+// ✅ Example 1
 
-Example 2 - Reverse a String - split(), reserver() and join()
-function revString(str) {
-return str.split('').reverse().join('')
-}
-console.log(revString("Morshedul Arefin"))
-OUTPUT:
-niferA ludehsroM
+// 👉 Without Arrow Function
 
-Example 3 - Assigning the complete function into a variable
-const revString = function(str) {
-return str.split('').reverse().join('')
-}
-console.log(revString("Morshedul Arefin"))
-OUTPUT:
-niferA ludehsroM
+// function message(name) {
+//     console.log("Hello " + name)
+// }
+// message("Arefin")
+
+// 👉 With Arrow Function
+
+// const message = (name) => {
+//     console.log("Hello " + name)
+// }
+// message("Arefin")
+
+
+// ✅ Example 2
+// ---------------------------
+
+// 👉 Without Arrow Function
+
+// function add(n1,n2) {
+//     return n1+n2
+// }
+// console.log(add(10,20))
+
+// 👉 With Arrow Function
+
+// const add = (n1,n2) => {
+//     return n1+n2
+// }
+// console.log(add(10,20))
+
+// 👉 With Arrow Function - but for single operation we can skip return and write statement in one line. But become careful, because writing this way decreases the code readability
+
+// const add = (n1,n2) => n1+n2
+// console.log(add(10,20))
+
