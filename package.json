@@ -1,0 +1,23 @@
+{
+  "name": "js_notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arrow_function.js",
+  "scripts": {
+    "test": "nodemon let_const.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewitharefin/js_notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codewitharefin/js_notes/issues"
+  },
+  "homepage": "https://github.com/codewitharefin/js_notes#readme",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
