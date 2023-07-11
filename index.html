@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .arefin {
+            font-size: 40px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <button onclick="testPrompt()">Click</button>
+    <script>
+        function testPrompt() {
+            let result = prompt("How many numbers?");
+            let final = ''
+            for(i=1;i<=result;i++) {
+                for(j=1;j<=i;j++) {
+                    document.write(j + ' ')
+                }
+                document.write('<br>')
+            }
+        }
+    </script> -->
+    <p class="country"></p>
+    <p class="country"></p>
+    <p class="country"></p>
+    <p id="test"></p>
+    <h2></h2>
+    <h2></h2>
+
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <input type="text" id="result">
+    <button onClick="myFunction()" id="calculate">Click Here</button>
+
+    <button onClick="addStyle()">Add Style</button>
+    <button onClick="removeStyle()">Remove Style</button>
+
+
+    <ul id="myItems"></ul>
+    <input id="myInput"><br><br>
+    <button onclick="addItem()">Add</button>
+
+
+    <script>
+        
+        document.getElementsByClassName('country')[0].innerHTML = "Bangladesh"
+        document.getElementsByClassName('country')[1].innerHTML = "India"
+        document.getElementsByClassName('country')[2].innerHTML = "China"
+        document.getElementsByTagName('h2')[0].innerHTML = "Khulna"
+        document.getElementsByTagName('h2')[1].innerHTML = "Dhaka"
+
+        let items = document.getElementsByTagName("h2");
+        let total = items.length;
+
+        document.getElementById('test').innerHTML = total
+
+        function addStyle() {
+            document.getElementById('test').classList.add('arefin')
+        }
+
+        function removeStyle() {
+            document.getElementById('test').classList.remove('arefin')
+        }
+
+        function myFunction() {
+            const a = document.getElementById('num1').value
+            const b = document.getElementById('num2').value
+            const result = parseInt(a) + parseInt(b)
+            document.getElementById('result').value = result
+        }
+
+        function addItem() {
+           let aa = document.getElementById("myInput").value;
+           let listItem = document.createElement('li');
+           listItem.innerHTML = aa;
+           let bb = document.getElementById("myItems");
+           bb.appendChild(listItem);
+       }
+
+
+
+    </script>
+
+</body>
+</html>
