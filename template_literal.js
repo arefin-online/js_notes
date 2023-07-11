@@ -59,3 +59,8 @@
 // const result = `My country name is \`Bangladesh\` and I live in \`Khulna\` city`
 // console.log(result)
 
+
+// ✅ Conditional Expressions (Ternary Operator):
+// const mark = 70
+// const result = `You have got ${mark>=80 ? "A+" : (mark<40) ? "Failed" : "Passed" } grade`
+// console.log(result)
