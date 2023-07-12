@@ -4,7 +4,7 @@
   "description": "",
   "main": "arrow_function.js",
   "scripts": {
-    "test": "nodemon template_literal.js"
+    "test": "nodemon spread_operator.js"
   },
   "repository": {
     "type": "git",
