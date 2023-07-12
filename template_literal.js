@@ -64,3 +64,28 @@
 // const mark = 70
 // const result = `You have got ${mark>=80 ? "A+" : (mark<40) ? "Failed" : "Passed" } grade`
 // console.log(result)
+
+
+// ✅ In Function Calls
+// const userId = 20;
+// const url = `https://api.example.com/users/${userId}`;
+// const config = {method: "GET"};
+// fetch(url, config)
+//     .then(response => response.json())
+//     .then(result => {
+//         console.log(result)
+//     })
+//     .catch(error => {
+//         console.log(error)
+//     });
+
+
+// ✅ In Destructuring
+// const person = {
+//     firstName: 'Morshedul',
+//     lastName: 'Arefin',
+//     age: 40
+// };
+// const { firstName, lastName, age } = person;
+// const message = `${firstName} ${lastName} is ${age} years old.`;
+// console.log(message);

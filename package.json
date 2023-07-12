@@ -4,7 +4,7 @@
   "description": "",
   "main": "arrow_function.js",
   "scripts": {
-    "test": "nodemon calculator.js"
+    "test": "nodemon template_literal.js"
   },
   "repository": {
     "type": "git",

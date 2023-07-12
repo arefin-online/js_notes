@@ -15,6 +15,8 @@
 // message("Arefin")
 
 
+
+
 // ✅ Example 2
 
 // 👉 Without Arrow Function
@@ -35,6 +37,9 @@
 
 // const add = (n1,n2) => n1+n2
 // console.log(add(10,20))
+
+
+
 
 // ✅ Example 3
 
@@ -88,6 +93,9 @@
 
 // const sum = (n) => n.reduce((o,n) => o+n)
 // console.log(sum([10,20,30]))
+
+
+
 
 // ✅ Arrow Function Issues or Problems
 // 1. You can not use 'this' keyword in arrow function
