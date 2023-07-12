@@ -6,15 +6,41 @@
     <title>Document</title>
 
     <style>
-        .arefin {
-            font-size: 40px;
+        .country_style {
+            font-size: 30px;
             color: red;
         }
     </style>
 </head>
 <body>
 
-    <!-- <button onclick="testPrompt()">Click</button>
+    <!-- 🟡 🟡 🟡 Javascript Window Object 🟡 🟡 🟡 -->
+
+    <!-- ✅ Alert Example -->
+    <!-- <button onclick="testAlert()">Click Here</button>
+    <script>
+        function testAlert() {
+            alert("This is an alert text")
+        }
+    </script> -->
+
+
+    <!-- ✅ Confirm Example -->
+    <!-- <button onclick="testConfirm()">Click Here</button>
+    <script>
+        function testConfirm() {
+            let result = confirm("Are you sure?");
+            if(result == true) {
+                document.write("You selected Ok");
+            } else {
+                document.write("You selected Cancel");
+            }
+        }
+    </script> -->
+
+
+    <!-- ✅ Prompt Example -->
+    <!-- <button onclick="testPrompt()">Click Here</button>
     <script>
         function testPrompt() {
             let result = prompt("How many numbers?");
@@ -27,7 +53,176 @@
             }
         }
     </script> -->
-    <p class="country"></p>
+
+    <!-- ✅ Open Example - It opens a new blank tab -->
+    <!-- <button onclick="testOpen()">Click Here</button>
+    <script>
+        function testOpen() {
+            open();
+        }
+    </script> -->
+
+
+    <!-- ✅ setTimeOut() -->
+    <!-- <script>
+        // Second parameter in miliseconds
+        setTimeout(function() {
+            alert("You are seeing this after 5 seconds");
+        },5000);
+    </script> -->
+
+
+    <!-- 🟡 🟡 🟡 Javascript Navigator Object 🟡 🟡 🟡 -->
+
+    <!-- ✅ Example -->
+    <!-- <script>
+        document.write("<br>navigator.appCodeName: " + navigator.appCodeName);
+        document.write("<br>navigator.appName: " + navigator.appName);
+        document.write("<br>navigator.appVersion: " + navigator.appVersion);
+        document.write("<br>navigator.cookieEnabled: " + navigator.cookieEnabled);
+        document.write("<br>navigator.language: " + navigator.language);
+        document.write("<br>navigator.userAgent: " + navigator.userAgent);
+        document.write("<br>navigator.platform: " + navigator.platform);
+        document.write("<br>navigator.onLine: " + navigator.onLine);
+    </script> -->
+    <!-- Output: https://prnt.sc/ucIUldTZu4Rb -->
+
+
+    <!-- ✅ geolocation -->
+    <!-- <script>
+    navigator.geolocation.getCurrentPosition(function(position){
+        let latitude = position.coords.latitude;
+        let longitude = position.coords.longitude;
+        let speed = position.coords.speed;
+        document.write("<br>Latitude: " + latitude);
+        document.write("<br>Longitude: " + longitude);
+        document.write("<br>Speed: " + speed);
+    });
+    </script> -->
+
+
+    <!-- 🟡 🟡 🟡 Javascript Events 🟡 🟡 🟡 -->
+
+
+    <!-- ✅ onclick() -->
+    <!-- <button onclick="test()">Click Here</button>
+    <script>
+        function test() {
+            document.write("Bangladesh")
+        }
+    </script> -->
+
+
+    <!-- ✅ onmouseover() -->
+    <!-- <button onmouseover="test()">Mouse Over</button>
+    <script>
+        function test() {
+            document.write("Bangladesh")
+        }
+    </script> -->
+
+    
+    <!-- ✅ onmouseout() -->
+    <!-- <button onmouseout="test()">Mouse Out</button>
+    <script>
+        function test() {
+            document.write("USA")
+        }
+    </script> -->
+
+
+    <!-- ✅ onchange() -->
+    <!-- <select id="country" onchange="test()">
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="USA">USA</option>
+        <option value="Australia">Australia</option>
+    </select>
+    <script>
+        function test() {
+            alert(document.getElementById("country").value + " is selected");
+        } 
+    </script> -->
+
+
+    <!-- ✅ onkeypress() : Fires when the key is pressed down and released. -->
+    <!-- <input type="text" onkeypress="test(event)">
+    <script>
+        function test(event) {
+            alert(`you pressed ${event.key} and the code is ${event.keyCode} `)
+        }
+    </script> -->
+
+
+    <!-- ✅ onkeyup() : Fires when the key is released after being pressed down. -->
+    <!-- <input type="text" onkeyup="test(event)">
+    <script>
+        function test(event) {
+            alert(`you pressed ${event.key} and the code is ${event.keyCode} `)
+        }
+    </script> -->
+
+
+    <!-- ✅ onkeydown() : Fires when the key is first pressed down. -->
+    <!-- <input type="text" onkeydown="test(event)">
+    <script>
+        function test(event) {
+            alert(`you pressed ${event.key} and the code is ${event.keyCode} `)
+        }
+    </script> -->
+
+    <!-- ⏩ onkeypress and onkeydown is a bit similar. Just when you press, it will work. But onkeyup will work only you release the pressing key -->
+
+
+
+    <!-- ✅ onfocus() & onblur() -->
+    <!-- <input type="text" onfocus="testOnFocus(this)" onblur="testOnBlur(this)">
+    <script>
+        function testOnFocus(x) {
+            x.style.color = "white"
+            x.style.background = "blue"
+        }
+        function testOnBlur(x) {
+            x.style.color = "white"
+            x.style.background = "red"
+        }
+    </script> -->
+
+
+    <!-- ✅ onload() - after website is completely loaded, this event will be fired -->
+    <!-- <body onload="myEvent('Load is done')">
+    <script>
+    function myEvent(msg) {
+        alert(msg);
+    }
+    </script> -->
+        
+
+    <!-- 🟡 🟡 🟡 DOM = Document Object Model  🟡 🟡 🟡 -->
+
+    <!-- ✅ Finding HTML Elements - BY Id -->
+    <!-- <p id="country"></p>
+    <script>
+        document.getElementById('country').innerHTML = "Bangladesh";
+    </script> -->
+
+
+    <!-- ✅ Finding HTML Elements - BY Class Name -->
+    <!-- <p class="country"></p>
+    <script>
+        document.getElementsByClassName('country')[0].innerHTML = "Bangladesh";
+    </script> -->
+    
+
+    <!-- ✅ Finding HTML Elements - BY Tag Name -->
+    <!-- <p></p>
+    <script>
+        document.getElementsByTagName('p')[0].innerHTML = "Bangladesh";
+    </script> -->
+
+
+
+
+    <!-- <p class="country"></p>
     <p class="country"></p>
     <p class="country"></p>
     <p id="test"></p>
@@ -39,17 +234,7 @@
     <input type="text" id="result">
     <button onClick="myFunction()" id="calculate">Click Here</button>
 
-    <button onClick="addStyle()">Add Style</button>
-    <button onClick="removeStyle()">Remove Style</button>
-
-
-    <ul id="myItems"></ul>
-    <input id="myInput"><br><br>
-    <button onclick="addItem()">Add</button>
-
-
     <script>
-        
         document.getElementsByClassName('country')[0].innerHTML = "Bangladesh"
         document.getElementsByClassName('country')[1].innerHTML = "India"
         document.getElementsByClassName('country')[2].innerHTML = "China"
@@ -61,32 +246,46 @@
 
         document.getElementById('test').innerHTML = total
 
-        function addStyle() {
-            document.getElementById('test').classList.add('arefin')
-        }
-
-        function removeStyle() {
-            document.getElementById('test').classList.remove('arefin')
-        }
-
         function myFunction() {
             const a = document.getElementById('num1').value
             const b = document.getElementById('num2').value
             const result = parseInt(a) + parseInt(b)
             document.getElementById('result').value = result
         }
+    </script> -->
 
+
+    <!-- ✅ Add and Remove Style -->
+    <!-- <p id="country">Bangladesh</p>
+    <button onClick="addStyle()">Add Style</button>
+    <button onClick="removeStyle()">Remove Style</button>
+    <script>
+        function addStyle() {
+            document.getElementById('country').classList.add('country_style')
+        }
+        function removeStyle() {
+            document.getElementById('country').classList.remove('country_style')
+        }
+    </script> -->
+
+
+    <!-- ✅ Advanced Example -->
+    <!-- <br>
+    <br>
+    <ul id="myItems"></ul>
+    <input id="myInput"><br><br>
+    <button onclick="addItem()">Add</button>
+
+    <script>
         function addItem() {
-           let aa = document.getElementById("myInput").value;
-           let listItem = document.createElement('li');
-           listItem.innerHTML = aa;
-           let bb = document.getElementById("myItems");
-           bb.appendChild(listItem);
-       }
+            let aa = document.getElementById("myInput").value;
+            let listItem = document.createElement('li');
+            listItem.innerHTML = aa;
+            let bb = document.getElementById("myItems");
+            bb.appendChild(listItem);
+        }
+    </script> -->
 
-
-
-    </script>
 
 </body>
 </html>
