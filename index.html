@@ -4,13 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        .country_style {
-            font-size: 30px;
-            color: red;
-        }
-    </style>
 </head>
 <body>
 
@@ -53,6 +46,7 @@
             }
         }
     </script> -->
+
 
     <!-- ✅ Open Example - It opens a new blank tab -->
     <!-- <button onclick="testOpen()">Click Here</button>
@@ -104,13 +98,49 @@
     <!-- 🟡 🟡 🟡 Javascript Events 🟡 🟡 🟡 -->
 
 
-    <!-- ✅ onclick() -->
+    <!-- ✅ onclick() - example 1 -->
     <!-- <button onclick="test()">Click Here</button>
     <script>
         function test() {
             document.write("Bangladesh")
         }
     </script> -->
+
+
+    <!-- ✅ onclick() - example 2 -->
+    <!-- <input type="text" id="num1">
+    <input type="text" id="num2">
+    <input type="text" id="result">
+    <button onClick="myFunction()" id="calculate">Add</button>
+    <script>
+        function myFunction() {
+            const a = document.getElementById('num1').value
+            const b = document.getElementById('num2').value
+            const result = parseInt(a) + parseInt(b)
+            document.getElementById('result').value = result
+        }
+    </script> -->
+
+
+    <!-- ✅ onclick() - example 3 - add/remove style -->
+    <!-- <p id="country">Bangladesh</p>
+    <button onClick="addStyle()">Add Style</button>
+    <button onClick="removeStyle()">Remove Style</button>
+    <script>
+        function addStyle() {
+            document.getElementById('country').classList.add('country_style')
+        }
+        function removeStyle() {
+            document.getElementById('country').classList.remove('country_style')
+        }
+    </script>
+    <style>
+        .country_style {
+            font-size: 30px;
+            color: red;
+        }
+    </style> -->
+
 
 
     <!-- ✅ onmouseover() -->
@@ -208,65 +238,48 @@
 
     <!-- ✅ Finding HTML Elements - BY Class Name -->
     <!-- <p class="country"></p>
+    <p class="country"></p>
+    <p class="country"></p>
     <script>
         document.getElementsByClassName('country')[0].innerHTML = "Bangladesh";
+        document.getElementsByClassName('country')[1].innerHTML = "USA";
+        document.getElementsByClassName('country')[2].innerHTML = "Canada";
     </script> -->
-    
+
 
     <!-- ✅ Finding HTML Elements - BY Tag Name -->
     <!-- <p></p>
+    <p></p>
+    <p></p>
     <script>
         document.getElementsByTagName('p')[0].innerHTML = "Bangladesh";
+        document.getElementsByTagName('p')[1].innerHTML = "USA";
+        document.getElementsByTagName('p')[2].innerHTML = "Canada";
     </script> -->
 
 
+    <!-- ✅ Finding HTML Elements - BY Name -->
+    <!-- <p name="country"></p>
+    <script>
+        document.getElementsByName('country')[0].innerHTML = "Bangladesh";
+    </script> -->
 
 
-    <!-- <p class="country"></p>
-    <p class="country"></p>
-    <p class="country"></p>
-    <p id="test"></p>
+    <!-- ✅ Count the number of particular tags -->
+    <!-- <h2></h2>
     <h2></h2>
     <h2></h2>
-
-    <input type="text" id="num1">
-    <input type="text" id="num2">
-    <input type="text" id="result">
-    <button onClick="myFunction()" id="calculate">Click Here</button>
-
     <script>
-        document.getElementsByClassName('country')[0].innerHTML = "Bangladesh"
-        document.getElementsByClassName('country')[1].innerHTML = "India"
-        document.getElementsByClassName('country')[2].innerHTML = "China"
-        document.getElementsByTagName('h2')[0].innerHTML = "Khulna"
-        document.getElementsByTagName('h2')[1].innerHTML = "Dhaka"
-
-        let items = document.getElementsByTagName("h2");
-        let total = items.length;
-
-        document.getElementById('test').innerHTML = total
-
-        function myFunction() {
-            const a = document.getElementById('num1').value
-            const b = document.getElementById('num2').value
-            const result = parseInt(a) + parseInt(b)
-            document.getElementById('result').value = result
-        }
+        alert(document.getElementsByTagName("h2").length);
     </script> -->
 
 
-    <!-- ✅ Add and Remove Style -->
-    <!-- <p id="country">Bangladesh</p>
-    <button onClick="addStyle()">Add Style</button>
-    <button onClick="removeStyle()">Remove Style</button>
-    <script>
-        function addStyle() {
-            document.getElementById('country').classList.add('country_style')
-        }
-        function removeStyle() {
-            document.getElementById('country').classList.remove('country_style')
-        }
-    </script> -->
+
+
+
+
+
+
 
 
     <!-- ✅ Advanced Example -->
