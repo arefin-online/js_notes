@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Window and DOM</title>
 </head>
 <body>
 
@@ -98,7 +98,7 @@
     <!-- 🟡 🟡 🟡 Javascript Events 🟡 🟡 🟡 -->
 
 
-    <!-- ✅ onclick() - example 1 -->
+    <!-- ✅ onclick() - Example 1 -->
     <!-- <button onclick="test()">Click Here</button>
     <script>
         function test() {
@@ -107,7 +107,7 @@
     </script> -->
 
 
-    <!-- ✅ onclick() - example 2 -->
+    <!-- ✅ onclick() - Example 2 -->
     <!-- <input type="text" id="num1">
     <input type="text" id="num2">
     <input type="text" id="result">
@@ -122,7 +122,7 @@
     </script> -->
 
 
-    <!-- ✅ onclick() - example 3 - add/remove style -->
+    <!-- ✅ onclick() - Example 3 - add/remove style -->
     <!-- <p id="country">Bangladesh</p>
     <button onClick="addStyle()">Add Style</button>
     <button onClick="removeStyle()">Remove Style</button>
@@ -140,6 +140,21 @@
             color: red;
         }
     </style> -->
+
+
+    <!-- ✅ onclick() - Example 4 - Advanced Example -->
+    <!-- <ul id="myItems"></ul>
+    <input id="myInput"><br><br>
+    <button onclick="addItem()">Add</button>
+    <script>
+        function addItem() {
+            let aa = document.getElementById("myInput").value;
+            let listItem = document.createElement('li');
+            listItem.innerHTML = aa;
+            let bb = document.getElementById("myItems");
+            bb.appendChild(listItem);
+        }
+    </script> -->
 
 
 
@@ -274,31 +289,68 @@
     </script> -->
 
 
-
-
-
-
-
-
-
-
-    <!-- ✅ Advanced Example -->
-    <!-- <br>
-    <br>
-    <ul id="myItems"></ul>
-    <input id="myInput"><br><br>
-    <button onclick="addItem()">Add</button>
-
+    <!-- ✅ DOM - Replace document with new content -->
+    <!-- <button onclick="test()">Click Here</button>
+    <p>This is a sample text</p>
     <script>
-        function addItem() {
-            let aa = document.getElementById("myInput").value;
-            let listItem = document.createElement('li');
-            listItem.innerHTML = aa;
-            let bb = document.getElementById("myItems");
-            bb.appendChild(listItem);
+    function test() {
+        document.open("text/html", "replace");
+        document.write("<h2>Morshedul Arefin</h2>");
+        document.close();
+    }
+    </script> -->
+
+
+    <!-- ✅ DOM - Open new window and add content there -->
+    <!-- Same as previous example, just in new window -->
+    <!-- <button onclick="test()">Click Here</button>
+    <script>
+    function test() {
+        var w = window.open();
+        w.document.open();
+        w.document.write("<h2>Morshedul Arefin</h2>");
+        w.document.close();
+    }
+    </script> -->
+
+
+    <!-- ✅ DOM - Change Attribute Value -->
+    <!-- <img id="myLogo" src="https://websolutionus.com/uploads/website-images/web-solution-us.png" width="200" height="80"><br>
+    <button onclick="test()">Change Image</button>
+    <script>
+        function test() {
+            let aa = document.getElementById("myLogo");
+            aa.src = "https://arefindev.com/uploads/logo.png";
+            aa.width = "300";
+            aa.height = "100";
         }
     </script> -->
 
+
+    <!-- ✅ DOM - Query Selector -->
+    <!-- <h3></h3>
+    <p id="city"></p>
+    <p class="state"></p>
+    <p name="zip"></p>
+    <input type="text" placeholder="Enter your name">
+    <script>
+        document.querySelector("h3").innerHTML = "USA";
+        document.querySelector("#city").innerHTML = "New York";
+        document.querySelector(".state").innerHTML = "California";
+        document.querySelector("p[name='zip']").innerHTML = "34244";
+        document.querySelector("input").placeholder = "Enter your full name";
+    </script> -->
+
+    
+    <!-- ✅ HTML DOM Documents -->
+    <!-- <p id="test"></p>
+    <script>
+        document.getElementById("test").innerHTML = document.cookie; // cookie info
+        document.getElementById("test").innerHTML = document.domain; // domain name
+        document.getElementById("test").innerHTML = document.lastModified; // last modified date
+        document.getElementById("test").innerHTML = document.title; // document title
+        document.getElementById("test").innerHTML = document.URL; // document url
+    </script> -->
 
 </body>
 </html>
