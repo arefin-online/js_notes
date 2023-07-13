@@ -177,3 +177,4 @@
 
 
 
+// 🟡 🟡 🟡 There are some more examples in Faisal vai's lecture, but I can not run the fetch() function and so I am leaving it in this point. 🟡 🟡 🟡
