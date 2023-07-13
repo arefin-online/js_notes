@@ -118,5 +118,7 @@
 // Promise 1 resolved
 
 
-// ✅ Promise Problem
-// 
+// ✅ Promise then() Problem
+// Multiple then() in larger applications will not be programmer friendly. 
+// In that case, understanding flow is an issue
+// If we can write asynchronous tasks line by line as synchronous way, it will be helpful and that solution is async await

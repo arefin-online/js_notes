@@ -4,7 +4,7 @@
   "description": "",
   "main": "arrow_function.js",
   "scripts": {
-    "test": "nodemon async_promise.js"
+    "test": "nodemon async_await.js"
   },
   "repository": {
     "type": "git",
