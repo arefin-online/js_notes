@@ -1,0 +1,34 @@
+✅ Initialize a new Node.js project with a default configuration:
+
+// "npm init --y" is a convenient way to quickly create a basic package.json file for a Node.js project using default settings without having to manually answer a series of prompts.
+
+npm init --y
+
+
+
+✅ "nodemon" Installation: 
+
+npm i nodemon
+
+
+
+✅ package.json
+
+👉 Change this code: 
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+},
+
+👉 To this: 
+
+"scripts": {
+    "test": "nodemon date.js"
+},
+
+
+
+
+✅ Terminal: 
+
+npm run test
