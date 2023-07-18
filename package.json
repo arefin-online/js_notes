@@ -4,7 +4,7 @@
   "description": "",
   "main": "arrow_function.js",
   "scripts": {
-    "test": "nodemon optional_chaining.js"
+    "test": "nodemon oop_concept.js"
   },
   "repository": {
     "type": "git",
